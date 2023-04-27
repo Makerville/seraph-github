@@ -6,7 +6,7 @@ inputs:
     required: true
     default: "000000"
 outputs:
-  build-status:
+  buildstatus:
     description: "Status of the build"
 runs:
   using: 'docker'
