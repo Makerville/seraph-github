@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
 echo "Project ID is $1"
-.$GITHUB_WORKSPACE/kaagaz
+/kaagaz
 echo "buildstatus=SUCCESS" >> $GITHUB_OUTPUT
