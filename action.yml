@@ -1,0 +1,18 @@
+name: Seraph for GitHub Actions
+description: Link your GitHub repository to Makerville Dashboard
+inputs:
+  project-id: 
+    description: "ID of the project in your Makerville dashboard"
+    required: true
+    default: "000000"
+outputs:
+  build-status:
+    description: "Status of the build"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.project-id }}
+  
+  
+  
